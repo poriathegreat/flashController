@@ -53,7 +53,7 @@ The first sector of the first available MB of the memory should look like this:
 
  		other      means corrupted memory.
 
-When writing data we look for the first available EMPRTY sector and we write the data there.
+When writing data we look for the first available EMPTY sector and we write the data there.
 When reading data we look for the first available UNREAD sector, thats the data we load.
 Once there are no more EMPTY sectors to write to, we erase all the READ sectors to be EMPTY
 On each change, we need to change the corresponding byte. 
